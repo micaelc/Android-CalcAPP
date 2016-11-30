@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hangapps.calcapp.CalcActivity"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Transparent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="?android:attr/colorAccent"
+            android:layout_height="195dp">
+
+            <TextView
+                android:text="567"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="48sp"
+                android:textAlignment="textEnd"
+                android:layout_gravity="right"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="70dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="102dp">
+
+            <Button
+                android:text="7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnSeven"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:text="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnEigth"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:text="9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnNine"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:src="@drawable/divide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnDivide"
+                android:layout_weight="1"
+                android:background="@color/Transparent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="102dp">
+
+            <Button
+                android:text="4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnFour"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:text="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnFive"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:text="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnSix"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:src="@drawable/multiply"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnMultiply"
+                android:layout_weight="1"
+                android:background="@color/Transparent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="4"
+            android:layout_height="102dp">
+
+            <Button
+                android:text="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnOne"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:text="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnTwo"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:text="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnThree"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:src="@drawable/subtract"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnMinus"
+                android:layout_weight="1"
+                android:background="@color/Transparent" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="102dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_width="205dp">
+
+                <Button
+                    android:text="@string/clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btnClear"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="?android:attr/colorControlActivated" />
+            </LinearLayout>
+
+            <Button
+                android:text="@string/zero"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:id="@+id/btnZero"
+                android:textSize="30sp"
+                android:background="@color/Transparent"
+                android:textColor="@android:color/black" />
+
+            <ImageButton
+                android:src="@drawable/add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btnAdd"
+                android:background="@color/Transparent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:src="@drawable/equal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEquals"
+        android:background="@color/Transparent"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="true"
+        android:paddingTop="145dp"
+        android:paddingRight="35dp" />
+</RelativeLayout>
