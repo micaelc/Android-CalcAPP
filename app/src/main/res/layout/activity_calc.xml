@@ -202,22 +202,17 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2">
 
-                    <LinearLayout
-                        android:orientation="vertical"
+                    <Button
+                        android:text="@string/clear"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_width="205dp">
+                        android:id="@+id/btnClear"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="30dp"
+                        android:background="?android:attr/colorControlActivated" />
 
-                        <Button
-                            android:text="@string/clear"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/btnClear"
-                            android:layout_marginBottom="30dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="20dp"
-                            android:layout_marginTop="30dp"
-                            android:background="?android:attr/colorControlActivated" />
-                    </LinearLayout>
                 </RelativeLayout>
 
                 <Button
